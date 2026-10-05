@@ -1,0 +1,57 @@
+class B 
+{
+	public static void main(String[] args) 
+	{
+		int a=0, b=0;
+		b = ++a + a;
+		System.out.println(a); // 1
+		System.out.println(b); // 2
+		System.out.println();
+		a=0;
+		b=0;
+		b = ++a + ++a;
+		System.out.println(a); // 2
+		System.out.println(b); // 3
+		System.out.println();
+		a = 0;
+		b=0;
+		b = a++ + a;
+		System.out.println(a); // 1
+		System.out.println(b); // 1
+		System.out.println();
+		a = 0;
+		b = 0;
+		b = a++ + a++;
+		System.out.println(a); // 2
+		System.out.println(b); // 1
+		System.out.println();
+		a = 0;
+		b = 0;
+		b = ++a + a++;
+		System.out.println(a); // 2
+		System.out.println(b); // 2
+		System.out.println();
+		a = 0;
+		a = ++a;
+		System.out.println(a); // 1
+		System.out.println();
+		a = 0;
+		a = a++;
+		System.out.println(a); // 0
+		System.out.println();
+		a = 0;
+		a++;
+		System.out.println(a); //1
+		System.out.println();
+		a = 0;
+		++a;
+		System.out.println(a); //1
+		System.out.println();
+		a = 0;
+		a = ++a;
+		a = ++a;
+		a = a++;
+		a = a++;
+		System.out.println(a); // 2
+	}
+}

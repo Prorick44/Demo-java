@@ -1,0 +1,13 @@
+class NeonNumber
+{
+	public static boolean Neon(int n, int sq, int sum) {
+		if (sq == 0) return (n == sum);
+		sq = sq * sq;
+		int n = sq % 10;
+		return Neon(n, sq/10, sum+=r);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(Neon(9,1,0));
+	}
+}

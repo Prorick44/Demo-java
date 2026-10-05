@@ -1,0 +1,28 @@
+class A 
+{
+	public static void main(String[] args) 
+	{
+		int a = 5;
+		a += 3;
+		System.out.println(a); // 8
+		a -= 3;
+		System.out.println(a); // 5
+		a =+ 3;
+		System.out.println(a); // 3
+		a =- 3;
+		System.out.println(a); // -3
+		a *= 3;
+		System.out.println(a); // -9
+		a /= 3;
+		System.out.println(a); // -3
+		// a =* 3 // Compile Time Error same for a =/ 3
+		
+		int m=40, n=50;
+		System.out.println(m + "+" + n + "=" + m + n); // 40 + 50 = 4050
+		System.out.println(m + "+" + n + "=" + (m+n)); // 40 + 50 = 90
+		
+		System.out.println('a' + 1); // 98 ascii value of a 97 + 1 = 98
+		System.out.println("a" + 1); // a1
+		System.out.println('a' + '1'); // ascii value of a 97 + ascii value of character 1 49 = 146
+	}
+}

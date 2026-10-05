@@ -1,0 +1,21 @@
+import java.util.Scanner;
+// Adding all the digits of the number
+class E
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number:- ");
+		int n = sc.nextInt();
+		int sum = 0;
+		while (n!=0)
+		{
+			int d = n%10;
+			System.out.print(d + " + ");
+			sum += d;
+			n/=10;
+		}
+		System.out.print("\b\b");
+		System.out.print("= "+sum);
+	}
+}

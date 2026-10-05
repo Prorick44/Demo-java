@@ -1,0 +1,16 @@
+class A 
+{
+	public static void main(String[] args) 
+	{
+		m1();
+		int n = m1();
+		System.out.println("n" + n);
+		int j = m1() * 4;
+		System.out.println("j" + j);
+		System.out.println(m1());
+	}
+	static int m1() {
+		System.out.println("Executing m1");
+		return 10;
+	}
+}

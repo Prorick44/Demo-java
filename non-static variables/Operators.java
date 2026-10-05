@@ -1,0 +1,16 @@
+class Operators
+{
+	public static void main(String[] args) 
+	{
+		int x = 100;
+		int y = 20;
+		System.out.println(x + y); // 120
+		System.out.println(x - y); // 80 
+		System.out.println(x * y); // 2000
+		System.out.println(x / y); // 5
+		System.out.println(x % y); // 0
+		System.out.println(10 % 7); // 3
+		System.out.println(2 % 20); // 2
+		System.out.println(x % 2 == 0 ? "even" : "odd");
+	}
+}

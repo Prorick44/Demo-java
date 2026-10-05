@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class Armstrong
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a num");
+		int n = sc.nextInt();
+		int m = n;
+		int g = n;
+		int count = 0;
+		while (n>0)
+		{
+			count++;
+			n/=10;
+		}
+		// System.out.println(count);
+		int sum = 0;
+		while (m>0)
+		{
+			int d = m%10;
+			int prod = 1;
+			for (int i=0;i<count ;i++ )
+			{
+				prod = prod * d;
+			}
+			sum += prod;
+			m /= 10;
+		}
+		System.out.println("Sum is:-" + sum);
+		if (g == sum)
+			System.out.println(g + " is an Armstrong number");
+		else
+			System.out.println(g + " is not an Armstrong number"); 
+	}
+}

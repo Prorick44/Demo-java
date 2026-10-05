@@ -1,0 +1,9 @@
+class B 
+{
+	public static void main(String[] args) 
+	{
+		int i;
+		// System.out.println(i); throws at compile time (assign it before use any variables java properties for local variable)
+				
+	}
+}

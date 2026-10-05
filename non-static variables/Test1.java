@@ -1,0 +1,27 @@
+class E
+{
+	static int i;
+	int j;
+}
+
+class Test1
+{
+	public static void main(String[] args) 
+	{
+		E e1 = new E();
+		E e2 = new E();
+		/* 
+		   only one memory will be allocated for static variable wheater we
+		   create object numerous number of time but each time a new memory will be allocated for non-static variable.
+		*/
+		e1.j = 10;
+		e2.j = 20;
+		System.out.println(e1.j); // 10
+		System.out.println(e2.j); // 20
+		
+		e1.i = 10;
+		e2.i = 20;
+		System.out.println(e1.i); // 20
+		System.out.println(e2.i); // 20
+	}
+}

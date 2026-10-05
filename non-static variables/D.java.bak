@@ -1,0 +1,23 @@
+class C
+{
+	static int i;
+	int j;
+	
+	static void m1(){
+		System.out.println("m1");	
+	}
+}
+
+class D
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("execution starts");
+		C.m1();
+		C.i = 20;
+		C c1 = new C();
+		c1.j = 30;
+		System.out.println(C.i);
+		System.out.println(c1.j);	
+	}
+}

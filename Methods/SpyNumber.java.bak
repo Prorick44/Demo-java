@@ -1,0 +1,15 @@
+class SpyNumber 
+{
+	public static int spy(int n, int sum, int prod) {
+		if (n == 0) return sum == prod;
+		sum = sum + (n%10);
+		prod = prod * (n%10);
+		return spy(n/10, sum, prod);
+	}
+	public static void main(String[] args) {
+		if(spy(1124,0,1))
+			System.out.println("YES SPY Number");
+		else 
+			System.out.println("NO Not a SPY Number");
+	}
+}

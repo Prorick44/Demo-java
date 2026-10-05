@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Armstrong_pow
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter a num");
+		int n = sc.nextInt();
+		int m = n;
+		int count = (n+"").length();
+		// System.out.println(count);
+		int sum = 0;
+		while (n>0)
+		{
+			sum += Math.pow(n%10, count);
+			n /= 10;
+		}
+		System.out.println("Sum is:-" + sum);
+		if (m == sum)
+			System.out.println(m + " is an Armstrong number");
+		else
+			System.out.println(m + " is not an Armstrong number"); 
+	}
+}

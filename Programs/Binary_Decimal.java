@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class Binary_Decimal
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter a Binary number:-");
+		int n = sc.nextInt();
+		int dec = 0;
+		int pow = 1;
+		boolean flag = true;
+		System.out.print("\nIts Decimal is:- ");
+		while (n!=0)
+		{
+			int d = n % 10;
+			if (d == 0 || d == 1)
+			{
+				dec += (d * pow);
+				pow *= 2;
+			}
+			else{
+				flag = false;
+				break;
+			}	
+			n /= 10;
+		}
+		if (!flag)
+		{
+			System.out.print("Enter a Binary number you moron!");
+		}
+		else 
+			System.out.print(dec);
+	}
+}

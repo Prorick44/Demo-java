@@ -1,0 +1,14 @@
+class PerfectNumber 
+{
+	public static boolean is_perfect(int n, int i, int sum) {
+		if (i==0) return (n == sum);
+		if (n%i == 0) sum += i;
+		return is_perfect(n, i-1, sum);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println(is_perfect(28,28/2,0));
+		System.out.println(is_perfect(6,6/2,0));
+		
+	}
+}

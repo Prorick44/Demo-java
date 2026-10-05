@@ -1,0 +1,17 @@
+class ForEachDemo2
+{
+	public static void main(String[] args) 
+	{
+		String[] a = {"java", "python", "sql"};
+		System.out.println("Iterating using for loop:- ");
+		for (int i=0;i<a.length;i++)
+		{
+			System.out.println(a[i]);
+		}
+		System.out.println("Iterating using for-each loop:- ");
+		for (String n : a)
+		{
+			System.out.println(n);
+		}
+	}
+}

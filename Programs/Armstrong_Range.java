@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Armstrong_Range 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the lower Range:-");
+		int a = sc.nextInt();
+		System.out.println("Enter the upper range:-");
+		int b = sc.nextInt();
+		System.out.print("The armstrong number will be:- ");
+		for (int i=a;i<=b;i++)
+		{
+			int temp = i;
+			int count = (temp + "").length();
+			int sum = 0;
+			while (temp > 0)
+			{
+				sum += (int)Math.pow(temp % 10, count);
+				temp /= 10;
+			}
+			if (i == sum)
+				System.out.print(sum + " ");
+		}
+	}
+}
